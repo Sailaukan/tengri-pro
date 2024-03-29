@@ -1,0 +1,32 @@
+.content{
+    grid-area: c;
+    background-color: #333333;
+
+    padding: 15px;
+    margin-right: 40px;
+
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+
+.ava img{
+  position: absolute;
+  top: -30%;
+  left: -160px;
+  margin: auto;
+  width: 500px;
+}
+
+.ava{
+  border-radius: 8px;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+}
+
+.item {
+  display: inline-block;
+  color: white;
+  padding-right: 20px;
+}
