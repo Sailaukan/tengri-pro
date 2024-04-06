@@ -1,20 +1,23 @@
-.header img{
-    width: 70px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-  
-.header{
-    height: auto;
-    grid-area: h;
-    background-color: #333333;
+.header img {
+    width: 150px;
 }
 
-.center{
-    text-align: center;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 100%;
+@media (min-width: 500px) {
+    .header {
+        height: auto;
+        grid-area: h;
+        padding: 15px 30px;
+        background-color: #272533;
+        text-align: left;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        height: auto;
+        grid-area: h;
+        padding: 15px 40px;
+        background-color: #272533;
+        text-align: center;
+    }
 }

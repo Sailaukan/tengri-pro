@@ -1,32 +1,28 @@
-.content{
+@media (min-width: 500px) {
+  .content{
     grid-area: c;
-    background-color: #333333;
+    max-width: 600px;
+    margin: auto;
+    padding-left: 40px;
+  }
 
-    padding: 15px;
-    margin-right: 40px;
-
-    border: 1px solid grey;
-    border-radius: 8px;
+  .item {
+    display: inline-block;
+    color: white;
+    margin-top: 30px;
+  }
 }
 
-.ava img{
-  position: absolute;
-  top: -30%;
-  left: -160px;
-  margin: auto;
-  width: 500px;
-}
+@media (max-width: 500px) {
+  .content{
+    padding: 20px;
+    grid-area: c;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
-.ava{
-  border-radius: 8px;
-  position: relative;
-  width: 120px;
-  height: 120px;
-  overflow: hidden;
-}
-
-.item {
-  display: inline-block;
-  color: white;
-  padding-right: 20px;
+  .item {
+    display: inline-block;
+    color: white;
+  }
 }
