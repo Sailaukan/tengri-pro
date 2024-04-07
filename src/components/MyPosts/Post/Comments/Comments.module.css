@@ -1,0 +1,44 @@
+.comments_thread{
+    border-top: 1px solid #4c485a;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.inputGp{
+    display: flex;
+    flex-direction: column;
+}
+.create_comment{
+    margin-bottom: 20px;
+}
+
+.comment_area{
+    resize: vertical;
+    background-color: #272533;
+    border-radius: 8px;
+    border: 1px solid #4c485a;
+    padding: 10px;
+    font-size: 15px;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.create_comment_button{
+    background-color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px 10px;
+    border: none;
+    margin-top: 10px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #e2e2e2;
+
+      }
+        
+      &:active {
+        background-color: #eeeeee;
+      }
+}
+

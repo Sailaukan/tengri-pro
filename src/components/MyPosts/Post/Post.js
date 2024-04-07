@@ -1,11 +1,23 @@
-import React from "react";
-import classes from "./Post.module.css"
+import React, { useState } from "react";
+import classes from "./Post.module.css";
+import Comments from "./Comments/Comments";
 
 const Post = (props) => {
-    return (
-        <div className={classes.container}>
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
+  return (
+    <div>
+        <div className={classes.container} onClick={openModal}>
             <div className={classes.title_item}>
-                {props.text}
+                {props.title}
             </div>
             <div className={classes.post_info}>
                 {props.time}
@@ -14,7 +26,30 @@ const Post = (props) => {
                 <img src={props.photo} alt="Post" className={classes.photo} />
             </div>
         </div>
-    )
-}
+        {isOpen && (
+            <div className={classes.modal}>
+                <div className={classes.modalContent}>
+                        <span className={classes.close} onClick={closeModal}>
+                            &times;
+                        </span>
+                        <div className={classes.title_item}>
+                            {props.title}
+                        </div>
+                        <div className={classes.post_info}>
+                            {props.time}
+                        </div>
+                        <div className={classes.post_photo}>
+                            <img src={props.photo} alt="Post" className={classes.photo} />
+                        </div>
+                        <div className={classes.post_text}>
+                            {props.text}
+                        </div>
+                        <Comments isAuth={props.isAuth} id={props.id}/>
+                </div>
+            </div>
+        )}
+    </div>
+  );
+};
 
 export default Post;

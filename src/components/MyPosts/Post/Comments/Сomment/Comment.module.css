@@ -1,0 +1,12 @@
+.comment{
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #4c485a;
+    margin-bottom: 10px;
+}
+
+.comment_userName{
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}

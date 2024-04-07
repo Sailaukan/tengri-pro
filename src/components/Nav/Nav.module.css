@@ -25,7 +25,6 @@
   }
 }
 
-
 @media (max-width: 500px) {
   .nav {
     grid-area: n;

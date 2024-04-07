@@ -1,22 +1,38 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import classes from "./MyPosts.module.css";
-import Post from "./Post/Post"
+import Post from "./Post/Post";
+import {collection, getDocs} from "firebase/firestore"
+import {db, auth} from "../../firebase-config.js";
 
-const MyPosts = () =>{
+const MyPosts = (props) =>{
+    const [postLists, setPostList] = useState([]);
+    const postCollectionRef = collection(db, "posts");
+
+    useEffect(()=>{
+        const getPosts = async () =>{
+            const data = await getDocs(postCollectionRef)
+            setPostList(data.docs.map((doc)=>({...doc.data(), id: doc.id})));
+        } 
+        getPosts(); 
+    })
+
     return(
         <div className={classes.content}>
-            <Post 
-                text="Парень из Павлодара поступил в знаменитый вуз, где преподавал Эйнштейн" 
-                photo="https://tengrinews.kz/userdata/news/2018/news_341532/thumb_b/photo_245392.jpeg.webp"
-                time="06 апреля 2018 22:27"
-            />
-            <Post 
-                text="Парень из Павлодара поступил в знаменитый вуз, где преподавал Эйнштейн" 
-                photo="https://tengrinews.kz/userdata/news/2018/news_341532/thumb_b/photo_245392.jpeg.webp"
-                time="06 апреля 2018 22:27"
-            />
+            <div>
+                {postLists.map((post)=>{
+                    return(
+                        <Post 
+                            id={post.id}
+                            title={post.title} 
+                            photo={post.image}
+                            time={post.time}
+                            text={post.text}
+                            isAuth={props.isAuth}
+                        />
+                    );
+                })}
+            </div>
         </div>
-        
     )
 }
 
