@@ -2,8 +2,7 @@
   .content{
     grid-area: c;
     max-width: 600px;
-    margin: auto;
-    padding-left: 40px;
+    margin: auto; 
   }
 
   .item {
@@ -11,14 +10,15 @@
     color: white;
     margin-top: 30px;
   }
+
   .text_signin{
     grid-area: c;
     width: 300px;
-    font-size: 20px;
+    font-size: 17px;
     border: 1px solid #4c485a;
     border-radius: 8px;
     margin: auto;
-    padding: 40px;
+    padding: 20px;
   }
   .text_signin_link{
     color: white;
@@ -42,16 +42,14 @@
   .content{
     padding: 20px;
     grid-area: c;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 auto; 
   }
   .text_signin{
     grid-area: c;
-    width: 300px;
     font-size: 23px;
     border: 1px solid #4c485a;
     border-radius: 8px;
-    margin: auto;
+    margin: auto; 
     padding: 40px;
   }
   .text_signin_link{

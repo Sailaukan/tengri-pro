@@ -4,12 +4,12 @@ import { NavLink } from "react-router-dom";
 
 
 const Nav = (props) => {
-    return(
+    return (
         <nav className={classes.nav}>
             <NavLink to="/content" className={classes.pages}>
                 <div className={`${classes.item} ${classes.active}`}>Новости</div>
             </NavLink>
-            <NavLink to="/tengris" className={classes.pages}>
+            <NavLink to="/videos" className={classes.pages}>
                 <div className={classes.item}>Тенгрис</div>
             </NavLink>
             <NavLink to="/profile" className={classes.pages}>
