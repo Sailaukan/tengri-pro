@@ -37,9 +37,6 @@ After logging in using Firebase Authentication, users can browse through the var
 ## Contributing
 We welcome contributions to Tengri Pro! If you have suggestions for improvements or bug fixes, please feel free to fork the repository and submit a pull request.
 
-## License
-[MIT License](LICENSE.txt) - [Your Name]
-
 ## Acknowledgments
 - Special thanks to the React and Firebase communities for their invaluable resources.
 - Inspired by the rich heritage and storytelling tradition of the Tengri.
