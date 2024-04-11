@@ -236,8 +236,6 @@
 }
 
 
-
-
 .close {
   color: #aaa;
   float: right;
@@ -250,4 +248,18 @@
   color: rgb(113, 113, 113);
   text-decoration: none;
   cursor: pointer;
+}
+
+.share_button{
+  margin-top: 15px;
+  padding: 7px 15px;
+  font-size: 15px;
+  background-color: white;
+  border: 0px;
+  border-radius: 5px;
+}
+
+.share_button:hover{
+  cursor: pointer;
+  background-color: #ceccd6;
 }

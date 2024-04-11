@@ -9,9 +9,6 @@ const Nav = (props) => {
             <NavLink to="/content" className={classes.pages}>
                 <div className={`${classes.item} ${classes.active}`}>Новости</div>
             </NavLink>
-            <NavLink to="/videos" className={classes.pages}>
-                <div className={classes.item}>Тенгрис</div>
-            </NavLink>
             <NavLink to="/profile" className={classes.pages}>
                 <div className={classes.item}>Профиль</div>
             </NavLink>

@@ -22,6 +22,7 @@ const App = () => {
           <Routes> { }
           <Route path="/content" element={<Content isAuth={isAuth} />} />
             <Route path="/profile" element={<Profile setIsAuth={setIsAuth} isAuth={isAuth} />} />
+            
           </Routes>
         </div>
       </div>
