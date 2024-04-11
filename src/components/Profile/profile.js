@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import classes from "./profile.module.css";
 import { auth, provider } from "../../firebase-config.js";
-import { signInWithPopup, getAuth, signOut } from 'firebase/auth';
+import { signInWithPopup, signOut } from 'firebase/auth';
 
 
 const Profile = (props) => {
@@ -32,6 +32,7 @@ const Profile = (props) => {
                 </div>
                 :
                 <div className={classes.profile_info}>
+                    <img src={auth.currentUser.photoURL} alt="Profile" className={classes.profilePhoto} />
                     <div className={classes.userName}>
                         {auth.currentUser.displayName}
                     </div>
@@ -48,6 +49,5 @@ const Profile = (props) => {
         </div>
     )
 }
-
 
 export default Profile;
