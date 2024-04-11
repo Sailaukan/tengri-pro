@@ -13,14 +13,14 @@ const Post = (props) => {
         setIsOpen(false);
     };
 
-const shareOnTelegram = () => {
-    const title = encodeURIComponent(props.title);
-    const url = encodeURIComponent(`https://tengri-pro.vercel.app/content`);
-    const message = encodeURIComponent(`${title}\n\nЧитайте здесь: ${url}`);
-    const emoji = "🗣 Tengri pro 🗣\n\n";
-    const telegramUrl = `https://t.me/share/url?url=${emoji}&text=${message}`;
-    window.open(telegramUrl, "_blank");
-};
+    const shareOnTelegram = () => {
+        const title = encodeURIComponent(props.title);
+        const url = encodeURIComponent(`https://tengri-pro.vercel.app/content`);
+        const message = encodeURIComponent(`${title}\n\nЧитайте здесь: ${url}`);
+        const emoji = "🗣 Tengri pro 🗣\n\n";
+        const telegramUrl = `https://t.me/share/url?url=${emoji}&text=${message}`;
+        window.open(telegramUrl, "_blank");
+    };
 
 
     return (
@@ -52,12 +52,18 @@ const shareOnTelegram = () => {
                             {props.time}
                         </div>
                         <div className={classes.photo_modal}>
-                            <img src={props.photo} alt="Post" className={classes.photo} />
+                            <img src={props.photo}
+                                alt="Post"
+                                className={classes.photo} />
                         </div>
                         <div className={classes.text_modal}>
                             {props.text}
                         </div>
-                        <button onClick={shareOnTelegram} className={classes.share_button}>Поделиться в Телеграм</button>
+                        <button
+                            onClick={shareOnTelegram}
+                            className={classes.share_button}>
+                            Поделиться в Телеграм
+                        </button>
                         <Comments isAuth={props.isAuth} id={props.id} />
                     </div>
                 </div>

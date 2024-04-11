@@ -1,8 +1,8 @@
 @media (min-width: 500px) {
-  .content{
+  .content {
     grid-area: c;
     max-width: 600px;
-    margin: auto; 
+    margin: auto;
   }
 
   .item {
@@ -11,7 +11,7 @@
     margin-top: 30px;
   }
 
-  .text_signin{
+  .text_signin {
     grid-area: c;
     width: 300px;
     font-size: 17px;
@@ -20,18 +20,22 @@
     margin: auto;
     padding: 20px;
   }
-  .text_signin_link{
+
+  .text_signin_link {
     color: white;
   }
-  .text_signin_link:hover{
+
+  .text_signin_link:hover {
     color: rgba(201, 201, 201);
   }
-  .text_welcome{
+
+  .text_welcome {
     color: white;
     font-weight: bold;
     font-size: 20px;
   }
-  .text_userName{
+
+  .text_userName {
     color: rgb(81, 229, 32);
     font-weight: bold;
     font-size: 20px;
@@ -39,35 +43,41 @@
 }
 
 @media (max-width: 500px) {
-  .content{
+  .content {
     padding: 20px;
     grid-area: c;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
-  .text_signin{
+
+  .text_signin {
     grid-area: c;
     font-size: 23px;
     border: 1px solid #4c485a;
     border-radius: 8px;
-    margin: auto; 
+    margin: auto;
     padding: 40px;
   }
-  .text_signin_link{
+
+  .text_signin_link {
     color: white;
   }
-  .text_welcome{
+
+  .text_welcome {
     color: white;
     font-weight: bold;
     font-size: 17px;
   }
-  .text_userName{
+
+  .text_userName {
     color: rgb(81, 229, 32);
     font-weight: bold;
     font-size: 17px;
   }
-  .text_signin_link:hover{
+
+  .text_signin_link:hover {
     color: rgba(201, 201, 201);
   }
+
   .item {
     display: inline-block;
     color: white;

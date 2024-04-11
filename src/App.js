@@ -20,9 +20,9 @@ const App = () => {
         <Nav />
         <div className='app-wrapper-content'>
           <Routes> { }
-          <Route path="/content" element={<Content isAuth={isAuth} />} />
+            <Route path="/content" element={<Content isAuth={isAuth} />} />
             <Route path="/profile" element={<Profile setIsAuth={setIsAuth} isAuth={isAuth} />} />
-            
+
           </Routes>
         </div>
       </div>

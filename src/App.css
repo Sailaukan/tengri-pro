@@ -11,10 +11,11 @@
       "n c";
   }
 
-.app-wrapper-content{
-  overflow-y: auto;
-  height: 90vh;
-}}
+  .app-wrapper-content {
+    overflow-y: auto;
+    height: 90vh;
+  }
+}
 
 
 @media (max-width: 500px) {

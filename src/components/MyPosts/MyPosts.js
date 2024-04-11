@@ -45,7 +45,7 @@ const MyPosts = (props) => {
                             style={{
                                 backgroundColor: selectedTopic === topic ? 'white' : 'transparent',
                                 color: selectedTopic === topic ? 'black' : 'white',
-                              
+
                             }
                             }
                         >
@@ -69,10 +69,10 @@ const MyPosts = (props) => {
             <div>
                 {postLists
                     .filter((post) => {
-                        if (searchTerm === "") {return post;} 
-                        else if (post.title.toLowerCase().includes(searchTerm.toLowerCase())) 
-                        {return post;
-}
+                        if (searchTerm === "") { return post; }
+                        else if (post.title.toLowerCase().includes(searchTerm.toLowerCase())) {
+                            return post;
+                        }
                         return false;
                     })
 

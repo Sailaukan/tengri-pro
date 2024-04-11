@@ -169,17 +169,18 @@
   }
 }
 
-.userName{
+.userName {
   margin-bottom: 5px;
   font-weight: bold;
   font-size: 25px;
 }
-.email{
+
+.email {
   font-size: 14px;
   margin-bottom: 5px;
 }
 
-.profilePhoto{
+.profilePhoto {
   margin-bottom: 5px;
 
 }
