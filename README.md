@@ -40,3 +40,6 @@ We welcome contributions to Tengri Pro! If you have suggestions for improvements
 ## Acknowledgments
 - Special thanks to the React and Firebase communities for their invaluable resources.
 - Inspired by the rich heritage and storytelling tradition of the Tengri.
+
+## Note
+This website uses Firebase's free tier, which imposes limitations on read/write requests to Firestore. Consequently, users may experience errors if these limits are exceeded. If you encounter this issue, please try accessing the website again after 1-2 hours. We aim to migrate to Supabase in the future for improved scalability but are currently constrained by time. Thank you for your understanding.
